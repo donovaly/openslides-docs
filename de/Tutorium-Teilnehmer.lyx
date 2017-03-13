@@ -665,7 +665,7 @@ In der Redeliste sehen Sie alle aktuell gemeldeten Redner.
 \begin_inset Graphics
 	filename clipart/Redeliste-ist-geschlossen-Nutzer.jpg
 	scale 60
-	BoundingBox 0bp 7bp 191bp 0bp
+	BoundingBox 0bp 5bp 191bp 0bp
 
 \end_inset
 
@@ -677,7 +677,7 @@ Konnten Sie sich zur Redeliste hinzufügen, klicken Sie auf
 \begin_inset Graphics
 	filename clipart/Redeliste-Mich.jpg
 	scale 60
-	BoundingBox 0bp 7bp 122bp 0bp
+	BoundingBox 0bp 7bp 108bp 0bp
 
 \end_inset
 
@@ -766,7 +766,14 @@ B.
 
 \begin_layout Standard
 Ist ein Antrag ein eigener Tagesordnungspunkt (TOP), erscheint dessen TOP-Nummer
- in der letzten spalte der Antragsübersicht.
+ in der letzten Spalte der Antragsübersicht.
+ Wird gerade ein Antrag behandelt, wird er in der Antragsübersicht blau
+ unterlegt.
+ In obigem Beispiel ist das für den zweiten Antrag der Fall.
+ Dieser Antrag hat denselben Titel wie der erste, da es ein Änderungsantrag
+ ist.
+ Die Kennzeichnung von Änderungsanträgen wird von der Versammlungsleitung
+ festgelegt.
 \end_layout
 
 \begin_layout Standard
@@ -811,7 +818,7 @@ Da Sie sich zu diesem Antrag äußern wollen, klicken Sie rechts oben auf
 \begin_inset Graphics
 	filename clipart/Redeliste-Symbol.jpg
 	scale 60
-	BoundingBox 0bp 7bp 86bp 0bp
+	BoundingBox 0bp 0bp 86bp 30bp
 
 \end_inset
 
@@ -838,13 +845,10 @@ Für Ihre Unterlagen möchten Sie den Antrag exportieren.
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Todo: Änderungsanträge
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -866,13 +870,108 @@ Wahlen
 \end_inset
 
 .
-\begin_inset Note Note
-status open
+ Sie sehen die Liste der Wahlen, wie z.
+\begin_inset space \thinspace{}
+\end_inset
 
-\begin_layout Plain Layout
-Todo: alles
+B.:
 \end_layout
 
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename clipart/Wahl-Übersicht-Nutzer.jpg
+	lyxscale 66
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Phase einer Wahl ist neben dessen Titel zu sehen.
+ Phase bedeutet, ob noch Kandidaturen möglich sind, ob man schon im Wahlvorgang
+ ist oder ob bereits gewählt wurde.
+ Jede Phase besitzt eine eigene Farbe, so dass man die Wahlen auch optisch
+ einordnen kann.
+\end_layout
+
+\begin_layout Standard
+Ist eine Wahl ein eigener Tagesordnungspunkt (TOP), erscheint dessen TOP-Nummer
+ in der letzten vorletzten Spalte der Antragsübersicht.
+ Die letzte Spalte der Übersicht gibt die Anzahl an bereits gemeldeten Kandidate
+n an.
+\end_layout
+
+\begin_layout Standard
+Klicken Sie nun auf eine Wahl.
+ Die Wahlseite wird geöffnet.
+ Dort sehen Sie eine Beschreibung und die Anzahl an zu wählenden Personen.
+ Ist die Wahl noch in der Phase 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Auf Kandidatensuche
+\end_layout
+
+\end_inset
+
+, können Sie sich und in den meisten Fällen auch jeden anderen Teilnehmer
+ der Veranstaltung vorschlagen.
+ Um sich selbst vorzuschlagen, klicken Sie nun auf 
+\begin_inset Graphics
+	filename clipart/Redeliste+Mich.jpg
+	scale 60
+	BoundingBox 0bp 7bp 122bp 0bp
+
+\end_inset
+
+.
+ Danach wählen Sie einen Teilnehmer aus der Liste aus, um ihn vorzuschlagen.
+\end_layout
+
+\begin_layout Standard
+Vorgeschlagene andere Teilnehmer kann nur die Versammlungsleitung wieder
+ von der Kandidatenliste nehmen.
+ Um sich selbst wieder von der Liste zu nehmen, klicken Sie jetzt auf 
+\begin_inset Graphics
+	filename clipart/Redeliste-Mich.jpg
+	scale 60
+	BoundingBox 0bp 7bp 108bp 0bp
+
+\end_inset
+
+.
+ Dies ist auch möglich, wenn Sie von einem anderen Teilnehmer vorgeschlagen
+ wurden.
+\end_layout
+
+\begin_layout Standard
+Da Sie sich zu dieser Wahl äußern wollen, klicken Sie rechts oben auf 
+\begin_inset Graphics
+	filename clipart/Redeliste-Symbol.jpg
+	scale 60
+	BoundingBox 0bp 7bp 86bp 0bp
+
+\end_inset
+
+ und fügen sich zur Redeliste hinzu.
+ Klicken Sie oben rechts auf 
+\begin_inset Graphics
+	filename clipart/Zurück-Wahl.jpg
+	scale 60
+	BoundingBox 0bp 7bp 61bp 0bp
+
+\end_inset
+
+, um zur Wahlseite zurückzukehren.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -1017,7 +1116,7 @@ Dateien
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Section
@@ -1035,8 +1134,7 @@ Klicken Sie oben rechts in der Kopfzeile auf Ihren Benutzernamen und dann
  auf 
 \begin_inset Graphics
 	filename clipart/Profil-bearbeiten.jpg
-	scale 60
-	BoundingBox 0bp 7bp 163bp 0bp
+	BoundingBox 0bp 5bp 92bp 0bp
 
 \end_inset
 
@@ -1068,8 +1166,7 @@ Klicken Sie oben rechts in der Kopfzeile auf Ihren Benutzernamen und dann
  auf 
 \begin_inset Graphics
 	filename clipart/Passwort-ändern.jpg
-	scale 60
-	BoundingBox 0bp 7bp 163bp 0bp
+	BoundingBox 0bp 5bp 96bp 0bp
 
 \end_inset
 
