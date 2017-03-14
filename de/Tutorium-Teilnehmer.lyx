@@ -304,9 +304,9 @@ OpenSlides
 \begin_inset space \space{}
 \end_inset
 
-eigenen Geräten wie Handys, Tablets und Computer anzuschauen.
- Sie können so der Veranstaltung besser folgen und gerade für Veranstaltungen
- mit mehreren Anträgen und Änderungsanträgen, ermöglicht es 
+mit eigenen Geräten wie Handys, Tablets und Computern anzuschauen.
+ Sie können so der Veranstaltung besser folgen und besonders bei Veranstaltungen
+ mit mehreren Anträgen und Änderungsanträgen, ermöglicht 
 \begin_inset Flex Noun
 status collapsed
 
@@ -327,7 +327,8 @@ OpenSlides
 
 \end_inset
 
- Redebeiträge anzumelden und (Änderungs)anträge einzubringen.
+ Redebeiträge anzumelden, Anträge einzubringen und Kandidaten für Wahlen
+ vorzuschlagen.
 \end_layout
 
 \begin_layout Standard
@@ -382,18 +383,6 @@ Loggen sie sich dort nun mit dem auf dem Zettel angegebenen Benutzernamen
 \end_layout
 
 \begin_layout Standard
-Im Folgenden wird angenommen, dass Ihr Benutzername 
-\emph on
-Frida
-\begin_inset space ~
-\end_inset
-
-Nunski
-\emph default
- lautet.
-\end_layout
-
-\begin_layout Standard
 Nach dem ersten Einloggen sieht 
 \begin_inset Flex Noun
 status collapsed
@@ -404,7 +393,7 @@ OpenSlides
 
 \end_inset
 
- wie folgt aus:
+ in etwa so aus:
 \end_layout
 
 \begin_layout Standard
@@ -421,8 +410,7 @@ OpenSlides
 \end_layout
 
 \begin_layout Standard
-Wahrscheinlich wurde bei Ihrer Veranstaltung in der Kopfzeile nicht das
- 
+Wahrscheinlich wird bei Ihrer Veranstaltung in der Kopfzeile nicht das 
 \begin_inset Flex Noun
 status collapsed
 
@@ -433,7 +421,7 @@ OpenSlides
 \end_inset
 
 -Logo verwendet.
- Durch Klicken auf das Logo können Sie in jedem Fall auf die Startseite
+ Durch Klicken auf das Logo können Sie in jedem Fall immer auf die Startseite
  zurückkehren.
  Klicken Sie in der Kopfzeile rechts auf Ihren Benutzernamen, können Sie
  Ihr Profil bearbeiten und Ihr Passwort ändern.
@@ -477,7 +465,7 @@ OpenSlides
 \end_layout
 
 \begin_layout Standard
-Klicken Sie auf das Symbol 
+Klicken Sie jetzt auf das Symbol 
 \begin_inset Graphics
 	filename clipart/Projektorsymbol-Leiste.jpg
 	scale 50
@@ -486,13 +474,20 @@ Klicken Sie auf das Symbol
 
  am rechten Bildschirmrand.
  Es wird nun die Projektorseitenleiste ausgeklappt.
- Dort wird der aktuell projizierte Inhalt in einer Live-Vorschau angezeigt.
- Damit haben Sie immer im Blick was auch gerade an der Leinwand sehen ist.
- Klicken Sie auf die Live-Vorschau.
- Es öffnet sich ein neuer Browsertab, indem das Projektorbild in voller
+ Dort sehen Sie also Vorschau was im Veranstaltungsraum gerade auf die Leinwand
+ projiziert wird.
+ Klicken Sie nun in die Vorschau.
+ Es öffnet sich ein neuer Browsertab, indem dieses Projektorbild in voller
  Größe zu sehen ist.
  Das Projektorbild aktualisiert sich automatisch und wird von der Veranstaltungs
 leitung gesteuert.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -566,8 +561,7 @@ Offene Einträge
 Klicken sie nun auf 
 \begin_inset Graphics
 	filename clipart/Filter-zurücksetzen.jpg
-	scale 60
-	BoundingBox 0bp 7bp 70bp 0bp
+	BoundingBox 0bp 3bp 40bp 0bp
 
 \end_inset
 
@@ -591,8 +585,22 @@ ung sind, aber der Übersicht halber von der Versammlungsleitung eingetragen
 \end_layout
 
 \begin_layout Standard
-Für Ihre Unterlagen möchten Sie die Tagesordnung exportieren.
- Klicken Sie dazu auf 
+Klicken Sie nun auf den Titel eines Tagesordnungspunkts.
+ Es wird eine neue Seite geöffnet, in der Details zu diesem Punkt stehen.
+ Klicken Sie dort auf 
+\begin_inset Graphics
+	filename clipart/Zurück-Übersicht.jpg
+	scale 60
+	BoundingBox 0bp 7bp 151bp 0bp
+
+\end_inset
+
+ um zur Übersicht zurückzukehren
+\end_layout
+
+\begin_layout Standard
+Da Sie für Ihre Unterlagen die Tagesordnung exportieren möchten, klicken
+ Sie nun auf 
 \begin_inset Graphics
 	filename clipart/Exportieren-alle.jpg
 	scale 60
@@ -681,7 +689,7 @@ Konnten Sie sich zur Redeliste hinzufügen, klicken Sie auf
 
 \end_inset
 
- um sich wieder zu entfernen.
+, um sich wieder zu entfernen.
 \end_layout
 
 \begin_layout Standard
@@ -697,6 +705,13 @@ Wird gerade geredet, können Sie sich die aktuelle Redeliste anzeigen lassen,
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -765,14 +780,14 @@ B.
 \end_layout
 
 \begin_layout Standard
-Ist ein Antrag ein eigener Tagesordnungspunkt (TOP), erscheint dessen TOP-Nummer
- in der letzten Spalte der Antragsübersicht.
+Ist ein Antrag ein eigener Tagesordnungspunkt, erscheint dessen Nummer in
+ der letzten Spalte der Antragsübersicht.
  Wird gerade ein Antrag behandelt, wird er in der Antragsübersicht blau
  unterlegt.
  In obigem Beispiel ist das für den zweiten Antrag der Fall.
  Dieser Antrag hat denselben Titel wie der erste, da es ein Änderungsantrag
  ist.
- Die Kennzeichnung von Änderungsanträgen wird von der Versammlungsleitung
+ Wie Änderungsanträge gekennzeichnet werden, wird von der Versammlungsleitung
  festgelegt.
 \end_layout
 
@@ -790,7 +805,7 @@ innerhalb
 
 \end_inset
 
- und Sie sehen, dass der Antragstext entsprechend nummeriert wurde.
+ um den Antragstext entsprechend zu nummerieren.
 \end_layout
 
 \begin_layout Standard
@@ -835,8 +850,8 @@ Da Sie sich zu diesem Antrag äußern wollen, klicken Sie rechts oben auf
 \end_layout
 
 \begin_layout Standard
-Für Ihre Unterlagen möchten Sie den Antrag exportieren.
- Klicken Sie dazu oben rechts auf 
+Um den Antrag für Ihre Unterlagen zu exportieren, klicken Sie oben rechts
+ auf 
 \begin_inset Graphics
 	filename clipart/PDF-Symbol.jpg
 	scale 60
@@ -845,13 +860,6 @@ Für Ihre Unterlagen möchten Sie den Antrag exportieren.
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -899,8 +907,8 @@ Die Phase einer Wahl ist neben dessen Titel zu sehen.
 \end_layout
 
 \begin_layout Standard
-Ist eine Wahl ein eigener Tagesordnungspunkt (TOP), erscheint dessen TOP-Nummer
- in der letzten vorletzten Spalte der Antragsübersicht.
+Ist eine Wahl ein eigener Tagesordnungspunkt, erscheint dessen Nummer in
+ der vorletzten Spalte der Antragsübersicht.
  Die letzte Spalte der Übersicht gibt die Anzahl an bereits gemeldeten Kandidate
 n an.
 \end_layout
@@ -970,13 +978,6 @@ Da Sie sich zu dieser Wahl äußern wollen, klicken Sie rechts oben auf
 , um zur Wahlseite zurückzukehren.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Teilnehmende
 \end_layout
@@ -1015,7 +1016,7 @@ B.:
 
 \begin_layout Standard
 Sie sehen, welche Teilnehmer zu welcher Gruppe gehören.
- Diese Gruppen legen, fest, was diese Teilnehmer dürfen.
+ Diese Gruppen legen fest, was die Teilnehmer dürfen.
  So dürfen Mitarbeitende Tagesordnungspunkte ändern oder hinzufügen.
  Gremien haben meist besondere Rechte für z.
 \begin_inset space \thinspace{}
@@ -1026,7 +1027,7 @@ B.
 \end_layout
 
 \begin_layout Standard
-Um die Teilnehmer zu sortieren, klicken Sie auf den Filter 
+Um die Teilnehmer zu sortieren, klicken Sie auf 
 \begin_inset Flex Menu Name
 status collapsed
 
@@ -1048,7 +1049,7 @@ Nachnahme
 
 .
  Wie sie sehen, werden die Teilnehmer entsprechend von A nach Z sortiert.
- Klicken erneut auf den Filter 
+ Klicken erneut auf 
 \begin_inset Flex Menu Name
 status collapsed
 
@@ -1070,6 +1071,13 @@ Nachnahme
 
 .
  Die Sortierrichtung hat sich nun auf von Z nach A geändert.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1180,7 +1188,7 @@ Besonderheiten für Mitarbeitende
 \begin_layout Standard
 Wurden Sie gebeten, bei der Verwaltung der Veranstaltung mitzuhelfen, hat
  Ihnen der Administrator besondere Rechte gegeben.
- Standardmäßig haben Sie die Berechtigungen der Benutzergruppe 
+ Standardmäßig haben Sie dann die Berechtigungen der Benutzergruppe 
 \emph on
 Mitarbeitende
 \emph default
@@ -1193,13 +1201,12 @@ aktiv
 \emph on
 anwesend
 \emph default
- kennzeichnen.
- Tagesordnungspunkte verändern uvm.
+ kennzeichnen, Tagesordnungspunkte verändern und vieles mehr.
 \end_layout
 
 \begin_layout Standard
 Um sich in Echtzeit mit den anderen Mitarbeitern auszutauschen, finden Sie
- ganz oben rechts neben Ihrem Benutzernamen ein Feld für einen Chat.
+ ganz oben rechts neben Ihrem Benutzernamen ein Feld für den Mitarbeiter-Chat.
  Mitteilungen in diesem Chat können nur von den anderen Mitarbeitern der
  Veranstaltung gelesen werden.
 \end_layout
