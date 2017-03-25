@@ -1085,17 +1085,11 @@ status collapsed
 \begin_layout Plain Layout
 
 \backslash
-Lib
-\backslash
-site-packages
-\backslash
 openslides
-\backslash
-core
 \backslash
 static
 \backslash
-openslides
+img
 \end_layout
 
 \end_inset
@@ -1114,7 +1108,26 @@ OpenSlides
 
 \end_inset
 
-; dort wo auch die Datenbank liegt.
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Achtung:
+\series default
+ Nach der Änderung des Logos, muss der Browser-Cache gelöscht werden, ehe
+ das neue Logo verwendet wird.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7253,6 +7266,31 @@ Zeilenlänge
 
  ist nur relevant wenn die Zeilennummerierung aktiv ist.
  Es legt fest wie viele Zeichen maximal auf eine Zeile gesetzt werden.
+ 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Achtung:
+\series default
+ Nach der Änderung der Zeilenlänge muss man in den Browserfenstern von 
+\begin_inset Flex Noun
+status collapsed
+
+\begin_layout Plain Layout
+OpenSlides
+\end_layout
+
+\end_inset
+
+ die Seite neu laden, damit die neue Länge verwendet wird.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8640,8 +8678,8 @@ heruntergeladen werden:
 
 \begin_inset CommandInset href
 LatexCommand href
-name "https://github.com/OpenSlides/openslides-csv-export/archive/master.zip"
-target "https://github.com/OpenSlides/openslides-csv-export/archive/master.zip"
+name "https://github.com/OpenSlides/openslides-csv-export/archive/2.0.2.zip"
+target "https://github.com/OpenSlides/openslides-csv-export/archive/2.0.2.zip"
 
 \end_inset
 
@@ -8655,7 +8693,7 @@ Um es zu installieren, entpackt man die ZIP-Datei in einen beliebigen Ordner.
 status collapsed
 
 \begin_layout Plain Layout
-openslides-csv-export-master
+openslides-csv-export-2.0.2
 \end_layout
 
 \end_inset
@@ -8676,7 +8714,7 @@ openslides_csv_export
 status collapsed
 
 \begin_layout Plain Layout
-~
+
 \backslash
 openslides
 \backslash
