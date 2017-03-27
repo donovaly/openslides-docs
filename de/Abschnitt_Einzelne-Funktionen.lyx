@@ -5060,16 +5060,7 @@ name "subsec:Empfehlung"
 \end_layout
 
 \begin_layout Standard
-Klick man auf den Namen eines Antrags, kann man in der Box über dem Antragstext
- auf 
-\begin_inset Graphics
-	filename clipart/Empfehlung-einzeln.jpg
-	scale 70
-
-\end_inset
-
- klicken, um für den Antrag eine Empfehlung festzulegen.
- Empfehlungen sind nur dann verfügbar, wenn in den Antragseinstellungen,
+Empfehlungen sind nur dann verfügbar, wenn in den Antragseinstellungen,
  siehe 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5091,11 +5082,28 @@ Name des Empfehlungsgebers
 \end_layout
 
 \begin_layout Standard
-Anträge können später mittels Antragsblöcken gemäß ihrer Empfehlung angenommen
- werden, siehe 
+Klick man auf den Namen eines Antrags, kann man in der Box über dem Antragstext
+ auf 
+\begin_inset Graphics
+	filename clipart/Empfehlung-einzeln.jpg
+	scale 70
+
+\end_inset
+
+ klicken, um für den Antrag eine Empfehlung festzulegen.
+ Anträge können entweder später mittels Antragsblöcken gemäß ihrer Empfehlung
+ angenommen werden, siehe 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Antragsblöcke"
+
+\end_inset
+
+, oder einzeln durch klicken auf 
+\begin_inset Graphics
+	filename clipart/Empfehlung-folgen.jpg
+	scale 60
+	BoundingBox 0bp 7bp 137bp 0bp
 
 \end_inset
 
@@ -5311,7 +5319,7 @@ Anträge
 \begin_inset Graphics
 	filename clipart/Antragsblöcke.jpg
 	scale 60
-	BoundingBox 0bp 7bp 119bp 0bp
+	BoundingBox 0bp 7bp 117bp 0bp
 
 \end_inset
 
@@ -6850,8 +6858,12 @@ Um einen Antrag anzuzeigen, klicken Sie entweder in der Antragsübersicht
  in der oberen Zeile rechts.
 \end_layout
 
+\begin_layout Subsection
+Navigation
+\end_layout
+
 \begin_layout Standard
-Einzelne Antragszeilen können in 
+Man kann in 
 \begin_inset Flex Noun
 status collapsed
 
@@ -6861,8 +6873,8 @@ OpenSlides
 
 \end_inset
 
- hervorgehoben werden.
- Dazu muss man in der Antragsseite die Zeilennummerierung aktiviert haben.
+ zu einzelnen Antragstextzeilen navigieren.
+ Dazu muss in der Antragsseite die Zeilennummerierung aktiviert sein.
  Klickt man auf 
 \begin_inset Graphics
 	filename clipart/gehe-zu.jpg
@@ -6871,33 +6883,12 @@ OpenSlides
 
 \end_inset
 
-, kann man eine Zeile auswählen und diese hervorheben.
- Diese Hervorhebung ist momentan nicht projizierbar.
- Stattdessen muss man z.
-\begin_inset space \thinspace{}
+, kann man eine Zeile auswählen und zu dieser springen.
+ Die ausgewählte Zeile wird für 3
+\begin_inset space ~
 \end_inset
 
-B.
- die Hintergrundfarbe der entsprechenden Zeile ändern, um sie im Projektor
- hervorzuheben.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Update wenn wieder verfügbar: Die Hervorhebung kann mit 
-\begin_inset Graphics
-	filename clipart/Hervorhebung-projizieren.jpg
-	scale 60
-	BoundingBox 0bp 9bp 50bp 0bp
-
-\end_inset
-
- auch projiziert werden.
-\end_layout
-
-\end_inset
-
-
+Sekunden gelb hinterlegt.
 \end_layout
 
 \begin_layout Subsection
