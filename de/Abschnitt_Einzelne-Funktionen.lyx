@@ -107,7 +107,7 @@ End
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
 \pdf_bookmarksopen true
-\pdf_bookmarksopenlevel 2
+\pdf_bookmarksopenlevel 1
 \pdf_breaklinks true
 \pdf_pdfborder false
 \pdf_colorlinks true
@@ -457,7 +457,6 @@ reference "sec:Teilnehmer"
 \end_inset
 
  wird automatisch ein zufälliges initiales Passwort gesetzt.
- Dieses kann nicht mehr geändert werden.
  Es ist solange aktiv, bis der Teilnehmer es ändert.
 \end_layout
 
@@ -527,22 +526,23 @@ Teilnehmende
 
 \end_inset
 
- klickt und dann 
-\begin_inset Flex Menu Name
-status collapsed
+ klickt und dann auf
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Plain Layout
-Zugangsdatenliste
-\end_layout
+
+\begin_inset Graphics
+	filename clipart/Zugangsdatenliste.jpg
+	scale 80
 
 \end_inset
 
- auswählt.
+.
 \end_layout
 
 \begin_layout Standard
 Die Zugangsdatenliste besteht aus einer Seite für jeden Teilnehmer.
- Sie ist dazu gedacht dem Teilnehmer seine Seite vor Beginn der Veranstaltung
+ Sie ist dazu da, um jedem Teilnehmer seine Seite vor Beginn der Veranstaltung
  auszuhändigen.
  Den Begrüßuns- und Erläuterungstext auf der Teilnehmerseite kann in den
  Teilnehmer-Einstellungen festgelegt werden, siehe 
@@ -590,7 +590,7 @@ OpenSlides
 
  ist Inhalte zu projizieren.
  Bei Versammlungen ist es essentiell, die Teilnehmer über den Ablauf und
- den aktuellen Punkt zu informieren.
+ den aktuellen Programmpunkt zu informieren.
  Je nach den technischen Möglichkeiten im Versammlungsraum stehen dafür
  ein oder mehrere Projektoren zur Verfügung.
 \end_layout
@@ -1012,17 +1012,7 @@ Logo auf dem Projektor anzeigen
 \end_inset
 
  kann ein Logo oben links dargestellt werden.
- Um das Logo zu ändern, muss eine Datei mit dem Namen 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-logo-projector.png
-\end_layout
-
-\end_inset
-
- im 
+ Um das Logo festzulegen, muss eine Datei mit dem Logo zu 
 \begin_inset Flex Noun
 status collapsed
 
@@ -1032,102 +1022,47 @@ OpenSlides
 
 \end_inset
 
--Benutzerdatenverzeichnis abgelegt werden:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-/static/img/logo-projector.png
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Diese Datei überschreibt das voreingestellte 
-\begin_inset Flex Noun
-status collapsed
-
-\begin_layout Plain Layout
-OpenSlides
-\end_layout
-
-\end_inset
-
--Logo.
-\begin_inset Newline newline
-\end_inset
-
-In der portablen Version für Windows ist das 
-\begin_inset Flex Noun
-status collapsed
-
-\begin_layout Plain Layout
-OpenSlides
-\end_layout
-
-\end_inset
-
--Benutzerdatenverzeichnis der Unterordner
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-openslides
-\backslash
-static
-\backslash
-img
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-des Installationsordners von 
-\begin_inset Flex Noun
-status collapsed
-
-\begin_layout Plain Layout
-OpenSlides
-\end_layout
+ hochgeladen werden, siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Dateien"
 
 \end_inset
 
 .
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Note Greyedout
-status open
+ In der Dateiübersicht im Menü 
+\begin_inset Flex Menu Name
+status collapsed
 
 \begin_layout Plain Layout
-
-\series bold
-Achtung:
-\series default
- Nach der Änderung des Logos, muss der Browser-Cache gelöscht werden, ehe
- das neue Logo verwendet wird.
+Dateien
 \end_layout
 
 \end_inset
 
+ fährt man mit der Maus über die gewünschte Bilddatei und klickt im erscheinenen
+ Kontextmenü auf 
+\begin_inset Graphics
+	filename clipart/Logos-verwalten.jpg
 
+\end_inset
+
+.
+ Nun kann man festlegen, für welche Logos das Bild verwendet wird.
+\end_layout
+
+\begin_layout Standard
+Mit der Option 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Uhr auf dem Projektor anzeigen
+\end_layout
+
+\end_inset
+
+ kann die aktuelle Uhrzeit oben rechts angezeigt werden.
 \end_layout
 
 \begin_layout Standard
@@ -1354,7 +1289,7 @@ B:
 \begin_inset Quotes gld
 \end_inset
 
-5:00
+05:00
 \begin_inset Quotes grd
 \end_inset
 
@@ -1409,12 +1344,8 @@ reference "subsec:Einstellungen-Projektor"
 \end_inset
 
 .
- Die Zeit der Countdowns wird unter 30
-\begin_inset space \thinspace{}
-\end_inset
-
-s orange eingefärbt.
- Diese Zeit kann im Menü 
+ Die letzten Sekunden des Countdowns können orange eingefärbt werden.
+ Dies kann im Menü 
 \begin_inset Flex Menu Name
 status collapsed
 
@@ -1425,7 +1356,7 @@ Tagesordnung
 
 \end_inset
 
- geändert werden, siehe 
+ eingestellt werden, siehe 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Einstellungen-Tagesordnung"
@@ -1433,7 +1364,7 @@ reference "subsec:Einstellungen-Tagesordnung"
 \end_inset
 
 .
- Nach dem Ablauf wird die Zeit rot eingefärbt und läuft negativ.
+ Nach dem Ablauf des Countdowns wird die Zeit rot eingefärbt und läuft negativ.
 \end_layout
 
 \begin_layout Standard
@@ -1459,7 +1390,7 @@ Countdown mit der Redeliste verkoppeln
 \end_inset
 
  ausgewählt sein.
- Dadurch werden alle existierenden Countdown automatisch gestartet, wenn
+ Dadurch werden alle existierenden Countdowns automatisch gestartet, wenn
  eine Rede begonnen wird.
  Ob, welcher und wie viele Countdowns projiziert werden, kann durch das
  Klicken auf 
@@ -7090,6 +7021,16 @@ reference "subsec:Einstellungen-Anträge"
  Es erscheint in der Übersicht zuerst die Liste aller Sachgebiete, dann
  die Liste der Anträge und schlussendlich jeder Antrag komplett mit Begründung.
  Die Anträge können so auch ausgedruckt und verteilt werden.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hinweis auf Logo
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -7939,6 +7880,16 @@ Um Stimmzettel zu erstellen, klickt man auf
 .
  Der Stimmzettel ist so ausgelegt, dass er ausgedruckt und verteilt werden
  kann.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hinweis auf Logo
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

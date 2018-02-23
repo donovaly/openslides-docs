@@ -709,11 +709,11 @@ Klicken Sie abschließend auf
 \begin_inset Graphics
 	filename clipart/Speichern.jpg
 	scale 60
-	BoundingBox 0bp 7bp 61bp 0bp
+	BoundingBox 0bp 7bp 70bp 0bp
 
 \end_inset
 
- .
+.
 \end_layout
 
 \begin_layout Standard
@@ -1604,7 +1604,6 @@ Beim Anlegen eines Teilnehmers wird automatisch ein zufälliges initiales
 \begin_inset Graphics
 	filename clipart/Zugangsdatenliste.jpg
 	scale 80
-	BoundingBox 0bp 7bp 138bp 0bp
 
 \end_inset
 
@@ -2435,7 +2434,7 @@ Da die Wahl von Personen eine geheime Wahl ist, müssen Stimmzettel erstellt
 \begin_inset Graphics
 	filename clipart/Zurück-Wahl.jpg
 	scale 60
-	BoundingBox 0bp 7bp 86bp 0bp
+	BoundingBox 0bp 7bp 61bp 0bp
 
 \end_inset
 
