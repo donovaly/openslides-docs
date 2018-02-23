@@ -177,7 +177,7 @@ OpenSlides
 
 \end_inset
 
- 2.1
+ 2.2
 \end_layout
 
 \begin_layout Standard
@@ -246,7 +246,7 @@ März
 \begin_inset space ~
 \end_inset
 
-2017 seine jährliche Mitgliederversammlung ab.
+2018 seine jährliche Mitgliederversammlung ab.
  Auf der Versammlung werden verschiedene Berichte gehalten und über eine
  Satzungsänderung abgestimmt.
  Außerdem finden Wahlen zum Vorstand und zum Beirat statt.
@@ -452,15 +452,11 @@ Mai
 \begin_inset space ~
 \end_inset
 
-2017
+2018
 \end_layout
 
 \begin_layout Description
 Veranstaltungsort: Leipzig
-\end_layout
-
-\begin_layout Description
-Veranstalter: Schreberverein Nord e.V.
 \end_layout
 
 \begin_layout Description
@@ -710,16 +706,14 @@ reference "sec:Dateien"
 \end_inset
 
 Klicken Sie abschließend auf 
-\begin_inset Flex Menu Name
-status collapsed
-
-\begin_layout Plain Layout
-Speichern
-\end_layout
+\begin_inset Graphics
+	filename clipart/Speichern.jpg
+	scale 60
+	BoundingBox 0bp 7bp 61bp 0bp
 
 \end_inset
 
-.
+ .
 \end_layout
 
 \begin_layout Standard
@@ -888,7 +882,7 @@ Besuchen Sie in der Zeit bitte auch die Stände der Vereine im Foyer.
 \end_layout
 
 \begin_layout Plain Layout
-Bitte kommen die pünktlich um 16:00 Uhr zurück in den Saal!
+Bitte kommen Sie pünktlich um 16:00 Uhr zurück in den Saal!
 \end_layout
 
 \end_inset
@@ -934,7 +928,7 @@ nicht
 
 \begin_layout Standard
 Interne Einträge erscheinen in der Tagesordnungsübersicht mit einem kleinen
- Verbotsschild vor dem Titel.
+ Verbotszeichen vor dem Titel.
 \end_layout
 
 \begin_layout Subsection
@@ -1086,7 +1080,7 @@ Bericht des Vorstandes
 
 \end_inset
 
- auf 0:20h.
+ auf 00:20.
  Titel und Text können Sie nach Klick auf 
 \begin_inset Flex Menu Name
 status collapsed
@@ -1193,14 +1187,6 @@ Projizieren Sie die Redeliste nun durch Klicken auf
 
 \end_inset
 
- oder 
-\begin_inset Graphics
-	filename clipart/Nächste-Rede-beginnen.jpg
-	scale 60
-	BoundingBox 0bp 7bp 167bp 0bp
-
-\end_inset
-
 .
  Ihr Name wird nun im Projektor angezeigt.
  Um die Rede zu beenden, klicken Sie auf 
@@ -1208,14 +1194,6 @@ Projizieren Sie die Redeliste nun durch Klicken auf
 	filename clipart/Rede-beenden.jpg
 	scale 60
 	BoundingBox 0bp 7bp 67bp 0bp
-
-\end_inset
-
- oder 
-\begin_inset Graphics
-	filename clipart/Aktuelle-Rede-beenden.jpg
-	scale 60
-	BoundingBox 0bp 7bp 165bp 0bp
 
 \end_inset
 
@@ -1273,8 +1251,8 @@ Jede Redeliste ist grundsätzlich erst einmal offen.
 \align center
 \begin_inset Graphics
 	filename clipart/Redeliste-ist-geschlossen.jpg
-	lyxscale 50
-	scale 47.5
+	lyxscale 66
+	scale 75
 
 \end_inset
 
@@ -1374,6 +1352,10 @@ Dr.
 \end_layout
 
 \begin_layout Plain Layout
+mustermann@test.de
+\end_layout
+
+\begin_layout Plain Layout
 Vorstand
 \end_layout
 
@@ -1465,6 +1447,19 @@ reference "subsec:Gruppen"
 \end_inset
 
  beschrieben.
+ Die Angabe der 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+E-Mail
+\end_layout
+
+\end_inset
+
+ ist wichtig, wenn die Teilnehmer ihre Zugangsdaten per E-Mail bekommen
+ sollen.
+ Mehr zu E-Mails siehe ??.
 \end_layout
 
 \begin_layout Subsection
@@ -1578,12 +1573,10 @@ Beim Anlegen eines Teilnehmers wird automatisch ein zufälliges initiales
 \end_inset
 
  und dann auf 
-\begin_inset Flex Menu Name
-status collapsed
-
-\begin_layout Plain Layout
-Zugangsdatenliste
-\end_layout
+\begin_inset Graphics
+	filename clipart/Zugangsdatenliste.jpg
+	scale 80
+	BoundingBox 0bp 7bp 138bp 0bp
 
 \end_inset
 
