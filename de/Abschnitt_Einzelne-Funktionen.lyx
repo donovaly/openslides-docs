@@ -2643,6 +2643,20 @@ Die Reihenfolge der Redeliste kann jederzeit geändert werden.
 \end_layout
 
 \begin_layout Standard
+Unterhalb der Live-Vorschau gibt es die Rubrik 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Redeliste
+\end_layout
+
+\end_inset
+
+ in der die aktuelle Liste projiziert und verwaltet werden kann.
+\end_layout
+
+\begin_layout Standard
 Am Ende der Veranstaltung kann man sämtliche Redelisten mit den jeweiligen
  Redezeiten als CSV-Datei exportieren.
  Dazu benötigt man das Plugin 

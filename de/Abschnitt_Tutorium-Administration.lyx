@@ -107,7 +107,7 @@ End
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
 \pdf_bookmarksopen true
-\pdf_bookmarksopenlevel 2
+\pdf_bookmarksopenlevel 1
 \pdf_breaklinks true
 \pdf_pdfborder false
 \pdf_colorlinks true
@@ -1170,6 +1170,20 @@ reference "subsec:Anlegen-eines-Teilnehmers"
 \end_layout
 
 \begin_layout Standard
+Die Reihenfolge der Redeliste kann jederzeit geändert werden.
+ Dazu klicken Sie auf das Symbol 
+\begin_inset Graphics
+	filename clipart/Redner-verschieben.jpg
+	scale 60
+	BoundingBox 0bp 7bp 28bp 0bp
+
+\end_inset
+
+ vor dem Rednernamen, halten die Maustaste gedrückt und verschieben den
+ Redner an die gewünschte Stelle.
+\end_layout
+
+\begin_layout Standard
 Projizieren Sie die Redeliste nun durch Klicken auf 
 \begin_inset Graphics
 	filename clipart/Projektorsymbol-Redeliste.jpg
@@ -1257,6 +1271,20 @@ Jede Redeliste ist grundsätzlich erst einmal offen.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Unterhalb der Live-Vorschau gibt es die Rubrik 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Redeliste
+\end_layout
+
+\end_inset
+
+ in der die aktuelle Liste projiziert und verwaltet werden kann.
 \end_layout
 
 \begin_layout Standard
@@ -1697,7 +1725,7 @@ Stock, Aufgang
 \begin_inset space ~
 \end_inset
 
-B.
+B
 \begin_inset Quotes grd
 \end_inset
 
@@ -1789,7 +1817,15 @@ Startzeit
 \begin_inset Quotes grd
 \end_inset
 
- ein und speichern Sie anschließend den Countdown .
+ ein und klicken auf 
+\begin_inset Graphics
+	filename clipart/Haken-Symbol-weiss.jpg
+	scale 60
+	BoundingBox 0bp 7bp 34bp 0bp
+
+\end_inset
+
+ um zu speichern.
  Klicken Sie nun auf 
 \begin_inset Graphics
 	filename clipart/Projektorsymbol.jpg
@@ -1799,15 +1835,6 @@ Startzeit
 \end_inset
 
  um den Countdown zu projizieren.
- Mit dem Klick auf 
-\begin_inset Graphics
-	filename clipart/Projektorsymbol-laufend.jpg
-	scale 60
-	BoundingBox 0bp 7bp 34bp 0bp
-
-\end_inset
-
- wird die aktuelle Mitteilung wieder vom Projektor entfernt.
  Mit 
 \begin_inset Graphics
 	filename clipart/Countdown-Start-Symbol.jpg
@@ -1892,8 +1919,8 @@ Anträge
 \end_layout
 
 \begin_layout Standard
-Geben Sie als Beispiel einen Antrag, mit dem die Vereinssatzung so geändert
- werden soll, dass der Beirat mehr Mitglieder hat, wie folgt ein:
+Geben Sie als Beispiel einen Antrag, mit dem die Vereinssatzung geändert
+ werden soll, wie folgt ein:
 \begin_inset Note Note
 status collapsed
 
@@ -1902,7 +1929,8 @@ Satzungsänderung
 \end_layout
 
 \begin_layout Plain Layout
-in §8 Absatz 1 der Vereinssatzung die Zahl fünf durch sieben zu ersetzen.
+Die Versammlung möge beschließen in §8 Absatz 1 der Vereinssatzung die Zahl
+ fünf durch sieben zu ersetzen.
 \end_layout
 
 \begin_layout Plain Layout
@@ -1928,7 +1956,7 @@ Die vielen Aufgaben erfordern eine Erweiterung des Beirats auf sieben Mitglieder
 \end_layout
 
 \begin_layout Standard
-Wie Sie sehen, gibt schon eine Einleitung 
+Eine typische Antragseinleitung wie 
 \begin_inset Quotes gld
 \end_inset
 
@@ -1936,8 +1964,7 @@ Die Versammlung möge beschließen,
 \begin_inset Quotes grd
 \end_inset
 
-.
- Diese können Sie ändern oder abschalten, siehe dazu 
+ kann man auch automatisch einfügen lassen, siehe dazu 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Einstellungen-Anträge"
@@ -1949,7 +1976,7 @@ reference "subsec:Einstellungen-Anträge"
 \end_layout
 
 \begin_layout Standard
-Erstellen Sie auf gleiche Weise eine weiteren Antrag mit dem Titel 
+Erstellen Sie auf gleiche Weise einen weiteren Antrag mit dem Titel 
 \begin_inset Quotes gld
 \end_inset
 
@@ -2243,7 +2270,7 @@ wählenden
 \begin_inset space ~
 \end_inset
 
-Posten: 7
+Posten: 5
 \end_layout
 
 \begin_layout Standard
@@ -2325,6 +2352,20 @@ OpenSlides
 \end_layout
 
 \begin_layout Standard
+Wenn Sie die die Reihenfolge der Kandidaten in der Liste und auf dem Stimmzettel
+n verändern wollen, klicken Sie auf das Symbol 
+\begin_inset Graphics
+	filename clipart/Redner-verschieben.jpg
+	scale 60
+	BoundingBox 0bp 7bp 28bp 0bp
+
+\end_inset
+
+ vor dem Namen, halten die Maustaste gedrückt und verschieben den Kandidaten
+ an die gewünschte Stelle.
+\end_layout
+
+\begin_layout Standard
 Wir gehen nun davon aus, dass die Kandidatenliste feststeht.
  Um die Wahl zu beginnen, klicken Sie unten auf 
 \begin_inset Graphics
@@ -2390,7 +2431,19 @@ reference "subsec:Redelisten"
 \begin_layout Standard
 Da die Wahl von Personen eine geheime Wahl ist, müssen Stimmzettel erstellt
  werden.
- Klicken Sie dafür auf 
+ Gehen Sie dazu mit 
+\begin_inset Graphics
+	filename clipart/Zurück-Wahl.jpg
+	scale 60
+	BoundingBox 0bp 7bp 86bp 0bp
+
+\end_inset
+
+ zurück zur Wahlansicht und klicken dort unten auf
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Graphics
 	filename clipart/Stimmzettel-drucken.jpg
 	scale 60
@@ -2416,7 +2469,7 @@ Da die Wahl von Personen eine geheime Wahl ist, müssen Stimmzettel erstellt
 \end_layout
 
 \begin_layout Standard
-Wir nehmen nun an, dass die Wahl ausgezählt wurde und die Ergebnisse vorliegen.
+Wir nehmen an, dass die Wahl ausgezählt wurde und die Ergebnisse vorliegen.
  Tragen Sie daher nun die Ergebnisse dieses 1.
 \begin_inset space ~
 \end_inset
@@ -2508,7 +2561,8 @@ Personen an der Wahl teilgenommen haben und dass die Satzung vorsieht, dass
 \end_inset
 
 Wahlgang nur Frau Meyer gewählt.
- Klicken Sie daher nur bei ihr in die Box vor ihrem Namen.
+ Klicken Sie daher nur bei ihr in die Box vor dem Namen, um sie als gewählt
+ zu markieren.
  Um die Wahl zu veröffentlichen, klicken Sie auf 
 \begin_inset Graphics
 	filename clipart/Wahl-veröffentlichen.jpg
@@ -2525,7 +2579,7 @@ Wahlgang nur Frau Meyer gewählt.
 \begin_layout Standard
 Sie können nun entscheiden, ob auch die Stimmenanzahlen projiziert werden
  sollen.
- Da das gewünscht ist, klicken Sie auf 
+ Da das gewünscht wird, klicken Sie auf 
 \begin_inset Graphics
 	filename clipart/Wahl-projizieren.jpg
 	scale 60
@@ -2535,10 +2589,6 @@ Sie können nun entscheiden, ob auch die Stimmenanzahlen projiziert werden
 
 .
  Am Projektor erscheint folgendes Bild:
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2592,7 +2642,7 @@ or als gewählt.
 
 \end_inset
 
- und ändern die Phase der Wahl auf 
+ und ändern oben die Phase der Wahl auf 
 \begin_inset Flex Menu Name
 status collapsed
 
