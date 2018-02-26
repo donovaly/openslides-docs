@@ -1501,7 +1501,7 @@ name "sec:Tagesordnung"
 \begin_layout Standard
 Die Verwaltung der Tagesordnung geschieht im Menü 
 \begin_inset Flex Menu Name
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Tagesordnung
@@ -1724,8 +1724,9 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-Die geschweiften Klammern verhindern, dass aus zwei aufeinanderfolgenden
- Kommas ein Anführungszeichen gemacht wird.
+Die geschweiften Klammern verhindern, dass \SpecialChar LaTeX
+ aus zwei aufeinanderfolgenden
+ Kommas ein Anführungszeichen macht.
 \end_layout
 
 \end_inset
@@ -1800,8 +1801,8 @@ ISO-8859-1
 \end_inset
 
  umgeschaltet werden, abhängig davon, wie die Datei gespeichert wurde.
- Dies lässt sich leicht in der Vorschau erkennen, ob Akzenten und Umlaute
- korrekt dargestellt werden.
+ In der Vorschau lässt sich leicht erkennen, ob Akzenten und Umlaute korrekt
+ dargestellt werden.
  Ist alles korrekt ausgewählt, sollten Sie eine vollständige Vorschau für
  den Import angezeigt bekommen:
 \begin_inset Foot
@@ -1863,7 +1864,7 @@ reference "chap:Beispiel-für-Tagesordnung-1"
 \end_layout
 
 \begin_layout Standard
-und kann die CSV-Datei noch ändern, falls es Fehler gibt.
+Man kann die CSV-Datei noch ändern, falls es Fehler gibt.
  Zum Import drückt man auf den Knopf 
 \begin_inset Flex Menu Name
 status collapsed
@@ -1895,7 +1896,7 @@ status collapsed
 \begin_inset CommandInset href
 LatexCommand href
 name "LibreOffice"
-target "http://www.libreoffice.org/"
+target "https://www.libreoffice.org/"
 
 \end_inset
 
@@ -2343,7 +2344,7 @@ Einzelne Tagesordnungspunkte werden projiziert, indem man auf das Symbol
 
 \begin_layout Standard
 Punkte, die als erledigt markiert wurden, werden in der projizierten Tagesordnun
-g grau dargestellt.
+g nicht mehr dargestellt.
 \end_layout
 
 \begin_layout Subsection
@@ -2401,8 +2402,8 @@ Mit einem Klick auf
 \end_inset
 
  kann man sich selbst auf die Redeliste setzen.
- Administratoren können jeden auf die Redeliste setzen und durch Klicken
- von 
+ Administratoren können jeden auf die Redeliste setzen, durch Klicken von
+ 
 \begin_inset Graphics
 	filename clipart/Redner-entfernen.jpg
 	scale 60
@@ -2410,7 +2411,15 @@ Mit einem Klick auf
 
 \end_inset
 
- jeden von der Liste nehmen.
+ jeden von der Liste nehmen und durch Klicken auf 
+\begin_inset Graphics
+	filename clipart/Alle-Redner-entfernen.jpg
+	scale 75
+	BoundingBox 0bp 7bp 140bp 0bp
+
+\end_inset
+
+ die Redeliste leeren.
 \end_layout
 
 \begin_layout Standard
@@ -2423,19 +2432,7 @@ Die Redeliste wird durch Klicken auf
 \end_inset
 
  projiziert.
- Durch Drücken von
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Graphics
-	filename clipart/Nächste-Rede-beginnen.jpg
-	scale 60
-	BoundingBox 0bp 7bp 167bp 0bp
-
-\end_inset
-
- oder 
+ Durch Drücken von 
 \begin_inset Graphics
 	filename clipart/Rede-beginnen.jpg
 	scale 60
@@ -2491,14 +2488,6 @@ reference "subsec:Countdowns"
 
 \begin_layout Standard
 Um die Rede zu beenden, klickt man auf 
-\begin_inset Graphics
-	filename clipart/Aktuelle-Rede-beenden.jpg
-	scale 60
-	BoundingBox 0bp 7bp 165bp 0bp
-
-\end_inset
-
- oder 
 \begin_inset Graphics
 	filename clipart/Rede-beenden.jpg
 	scale 60
@@ -2626,7 +2615,7 @@ Klickt man in der Tagesordnungsübersicht auf
 
 , kann man das Ausgabeformat wählen.
  Es wird so entweder ein PDF generiert, das die gesamte Tagesordnung mit
- allen Unterpunkten (ohne eigene Themen) enthält, oder es wird ein CSV-Datei
+ allen Unterpunkten (ohne eigene Themen) enthält, oder es wird eine CSV-Datei
  erstellt, die man für eine andere Veranstaltung wieder importieren kann.
 \end_layout
 
@@ -2737,7 +2726,7 @@ Im Feld
 status collapsed
 
 \begin_layout Plain Layout
-Anzahl der dargestellten letzten Redner/innen auf dem Projektor
+Anzahl der dargestellten letzten Redner auf dem Projektor
 \end_layout
 
 \end_inset
@@ -2852,6 +2841,10 @@ Vorname Vorname
 
 \begin_layout Description
 Nachname Nachname
+\end_layout
+
+\begin_layout Description
+E-Mail E-Mailadresse
 \end_layout
 
 \begin_layout Description
@@ -3047,7 +3040,11 @@ aktiv,Ist
 \begin_inset space ~
 \end_inset
 
-anwesend,Ist ein Gremium
+anwesend,Ist ein Gremium,Initiales Passwort,
+\begin_inset Newline newline
+\end_inset
+
+E-Mail
 \end_layout
 
 \end_inset
@@ -3158,7 +3155,29 @@ status collapsed
 
 \end_inset
 
+,
+\begin_inset ERT
+status collapsed
 
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+kaessmann@abc.abc
 \end_layout
 
 \end_inset
@@ -3168,8 +3187,9 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-Die geschweiften Klammern verhindern, dass aus zwei aufeinanderfolgenden
- Kommas ein Anführungszeichen gemacht wird.
+Die geschweiften Klammern verhindern, dass \SpecialChar LaTeX
+ aus zwei aufeinanderfolgenden
+ Kommas ein Anführungszeichen macht.
 \end_layout
 
 \end_inset
@@ -3188,6 +3208,8 @@ Jedes Komma trennt die Eigenschaften voneinander.
 
 Die Angabe der Gruppe ermöglicht es, für alle Teilnehmer einer Gruppe dieselben
  Rechte festzulegen.
+ Ist eine Gruppe angegeben, die noch nicht existiert, wird sie beim Importieren
+ automatisch neu angelegt.
  Mehr Details zu Gruppen siehe 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3257,7 +3279,29 @@ status collapsed
 
 \end_inset
 
+,
+\begin_inset ERT
+status collapsed
 
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+oltran@abc.abc
 \end_layout
 
 \end_inset
@@ -3267,8 +3311,9 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-Die geschweiften Klammern verhindern, dass aus zwei aufeinanderfolgenden
- Kommas ein Anführungszeichen gemacht wird.
+Die geschweiften Klammern verhindern, dass \SpecialChar LaTeX
+ aus zwei aufeinanderfolgenden
+ Kommas ein Anführungszeichen macht.
 \end_layout
 
 \end_inset
@@ -3423,6 +3468,7 @@ importieren
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
