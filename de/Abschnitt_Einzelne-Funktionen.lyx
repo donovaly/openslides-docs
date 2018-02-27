@@ -1040,8 +1040,8 @@ Dateien
 
 \end_inset
 
- fährt man mit der Maus über die gewünschte Bilddatei und klickt im erscheinenen
- Kontextmenü auf 
+ fährt man mit der Maus über die gewünschte Bilddatei und klickt im erscheinende
+n Kontextmenü auf 
 \begin_inset Graphics
 	filename clipart/Logos-verwalten.jpg
 
@@ -2868,7 +2868,16 @@ Vorstand
 
 \begin_layout Description
 Teilnehmernummer optionale Nummer eines Teilnehmers.
- Die Teilnehmernummer wird in Redelisten in Klammern nach dem Namen angezeigt
+ Die Teilnehmernummer wird in Redelisten in Klammern nach dem Namen angezeigt.
+ Die Nummer kann dazu verwendet werden, die Anwesenheit während der Veranstaltun
+g schnell zu ändern, siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Einstellungen-Teilnehmer"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Description
@@ -3824,7 +3833,7 @@ Geht man mit der Maus auf einen Teilnehmer, erscheint hinter seinem Namen
 
 , falls er noch nicht Mitglied einer Gruppe ist.
  Ansonsten ist es immer sichtbar.
- Klickt man auf dieses Symbol, kann man eine Gruppe festlegen oder ändern.
+ Klickt man auf dieses Symbol, kann man die Gruppe festlegen oder ändern.
 \end_layout
 
 \begin_layout Standard
@@ -3853,12 +3862,10 @@ Die Teilnehmerliste kann als PDF ausgegeben werden, wenn man auf das Symbol
 \end_inset
 
  und dann auf 
-\begin_inset Flex Menu Name
-status collapsed
-
-\begin_layout Plain Layout
-Teilnehmerliste
-\end_layout
+\begin_inset Graphics
+	filename clipart/Teilnehmendenliste-PDF.jpg
+	scale 80
+	BoundingBox 0bp 7bp 140bp 0bp
 
 \end_inset
 
@@ -3948,6 +3955,37 @@ Um den Gruppennamen zu ändern, geht man mit der Maus auf den Gruppennamen
 \end_inset
 
 .
+ Die Gruppen 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Standard
+\end_layout
+
+\end_inset
+
+ und 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Mitarbeitende
+\end_layout
+
+\end_inset
+
+ können nicht gelöscht werden, da 
+\begin_inset Flex Noun
+status collapsed
+
+\begin_layout Plain Layout
+OpenSlides
+\end_layout
+
+\end_inset
+
+ sonst unbedienbar werden würde.
 \end_layout
 
 \begin_layout Standard
@@ -4040,6 +4078,41 @@ Vorname nach dem Vornamen
 
 \begin_layout Description
 Nachname nach dem Nachnamen
+\end_layout
+
+\begin_layout Standard
+Ist die Option 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Ansicht zur Teilnehmeranwesenheit aktivieren
+\end_layout
+
+\end_inset
+
+ aktiviert, erscheint in der Titelleiste des Menüs 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Teilnehmende
+\end_layout
+
+\end_inset
+
+ der Knopf 
+\begin_inset Graphics
+	filename clipart/Anwesenheit.jpg
+	scale 80
+	BoundingBox 0bp 7bp 84bp 0bp
+
+\end_inset
+
+.
+ Klickt man darauf, kann man schnell die Anwesenheit von Teilnehmern ändern,
+ indem man ihre Nummer eingibt.
+ Dafür müssen die Teilnehmer eine Teilnehmernummer besitzen.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -4163,6 +4236,53 @@ System URL
 
  erscheinen im PDF der Zugangsdaten und werden auch im QR-Code in diesem
  PDF berücksichtigt.
+\end_layout
+
+\begin_layout Subsubsection*
+Rubrik E-Mail
+\end_layout
+
+\begin_layout Standard
+Im Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Absender
+\end_layout
+
+\end_inset
+
+ wird die E-Mailadresse eingegeben, von der aus Nachrichten an Teilnehmer
+ verschickt werden.
+\end_layout
+
+\begin_layout Standard
+Im Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Betreff
+\end_layout
+
+\end_inset
+
+ wird der Betreff der E-Mailnachricht eingegeben.
+\end_layout
+
+\begin_layout Standard
+Im Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Nachrichtentext
+\end_layout
+
+\end_inset
+
+ wird der Text der E-Mailnachricht eingegeben.
 \end_layout
 
 \begin_layout Standard
@@ -9262,7 +9382,73 @@ ommentar,
 \begin_inset Newline newline
 \end_inset
 
-Bericht des Vorstands,,0:20,,1
+Bericht des Vorstands,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+0:20,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+1
+\family default
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Die geschweiften Klammern verhindern, dass \SpecialChar LaTeX
+ aus zwei aufeinanderfolgenden
+ Kommas ein Anführungszeichen macht.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -9287,29 +9473,448 @@ Teilnehmern:
 \begin_layout Standard
 
 \family sans
-Titel,Vorname,Nachname,Gliederungsebene,Teilnehmernummer,Gruppen,Kommentar,Ist
- aktiv,Ist anwesend,Ist ein Gremium
+Titel,Vorname,Nachname,Gliederungsebene,Teilnehmernummer,Gruppen,Kommentar,
+\begin_inset Newline newline
+\end_inset
+
+Ist aktiv,Ist anwesend,Ist ein Gremium,Initiales Passwort,E-Mail
 \begin_inset Newline newline
 \end_inset
 
 Prof.
- Dr.,Max,Käßmann,,,Delegierte,,1,,
+ Dr.,Max,Käßmann,,,Delegierte,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+1,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+kaessmann@abc.abc
 \begin_inset Newline newline
 \end_inset
 
-,John,Doe,,,Delegierte,abc,1,,
+,John,Doe,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,Delegierte,abc,1,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+doe@abc.abc
 \begin_inset Newline newline
 \end_inset
 
-,Fred,Bloggs,,,Delegierte,,,,
+,Fred,Bloggs,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,Delegierte,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+bloggs@abc.abc
 \begin_inset Newline newline
 \end_inset
 
-,Žusan,Oltrán,Vorstand,,"Delegierte,Mitarbeitende",kommt 15 Minuten später,1,,
+,Žusan,Oltrán,Vorstand,,"Delegierte,Mitarbeitende",kommt 15 Minuten später,1,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+oltran@abc.abc
 \begin_inset Newline newline
 \end_inset
 
-,,Wahlkommision,,,Gremien,,1,1,1
+,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+Wahlkommision,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,Gremien,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+1,1,1,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+wahlkommision@abc.abc
 \end_layout
 
 \begin_layout Section
@@ -9350,7 +9955,33 @@ B1,Titel 2,Text 2,Begründung 2,Antragsteller 2,Kategorie B,
 \begin_inset Newline newline
 \end_inset
 
-,Titel 3,Text 3,Begründung 3,,,
+,Titel 3,Text 3,Begründung 3,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,
 \end_layout
 
 \end_inset
