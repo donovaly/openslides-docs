@@ -4452,7 +4452,7 @@ reference "subsec:Schlagwörter "
 
 \end_inset
 
- die Unterstützer und der Arbeitsablauf
+ und der Arbeitsablauf
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -4474,6 +4474,21 @@ reference "subsec:Arbeitsablauf-und-Status"
 \end_inset
 
  angegeben werden.
+ Um einen Antragsblock, Schlagwörter und ein Sachgebiet festzulegen zu können,
+ müssen vorher Antragsblöcke, Schlagwörter und Sachgebiete definiert worden
+ sein.
+ Im Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Herkunft
+\end_layout
+
+\end_inset
+
+ kann man eine kurze Information zur Herkunft angeben, die in der Antragsliste
+ erscheint.
 \end_layout
 
 \begin_layout Subsection
@@ -4500,7 +4515,11 @@ Anträge können automatisiert aus einer Liste importiert werden.
 status collapsed
 
 \begin_layout Plain Layout
-Bezeichner,Titel,Text,Begründung,Antragsteller/in,Sachgebiet,Herkunft
+Bezeichner,Titel,Text,Begründung,Antragsteller/in,Sachgebiet,Herkunft,
+\begin_inset Newline newline
+\end_inset
+
+Antragsblock,Status,Empfehlung
 \end_layout
 
 \end_inset
@@ -4509,6 +4528,9 @@ Bezeichner,Titel,Text,Begründung,Antragsteller/in,Sachgebiet,Herkunft
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
 Es folgen dann je eine Zeile für jeden Antrag.
  Ein Eintrag für einen Antrag wäre z.
 \begin_inset space \thinspace{}
@@ -4521,10 +4543,49 @@ B.:
 
 \family sans
 Kat A-1,Satzungsänderung,"Die Mitgliederversammlung möge beschließen, in
- §8 Absatz 1 der Vereinssatzung die Zahl fünf durch sieben zu ersetzen.",Die
- vielen Aufgaben erfordern eine Erweiterung des Beirates auf sieben Mitglieder.,D
-r.
- Hans Schulze,Kategorie A,Vorstandssitzung vom 19.10.
+ §8 Absatz 1 der Vereinssatzung die Zahl fünf durch sieben zu ersetzen.","Die
+ vielen Aufgaben erfordern eine Erweiterung des Beirates auf sieben Mitglieder.",
+Hans Schulze,Kategorie A,Vorstandssitzung vom 19.10.,
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family sans
+,Annahme
+\family default
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Die geschweiften Klammern verhindern, dass \SpecialChar LaTeX
+ aus zwei aufeinanderfolgenden
+ Kommas ein Anführungszeichen macht.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4534,8 +4595,8 @@ Jedes Komma trennt die Eigenschaften voneinander.
  Enthält eine Eigenschaft ein Komma, muss die Eigenschaft in doppelte Anführungs
 zeichen gesetzt werden.
  Dies wurde in obigem Beispiel für den Antragstext gemacht.
- Beim Antragsteller ist es wichtig, dass er mit seinem Titel angegeben wird.
- In obigem Beisiel ist der Benutzername bei 
+ Beim Antragsteller ist es wichtig, dass er mit Titel angegeben wird, wenn
+ er in 
 \begin_inset Flex Noun
 status collapsed
 
@@ -4545,24 +4606,8 @@ OpenSlides
 
 \end_inset
 
- zwar 
-\begin_inset Quotes gld
-\end_inset
-
-Hans Schulze
-\begin_inset Quotes grd
-\end_inset
-
-, hier muss er aber als 
-\begin_inset Quotes gld
-\end_inset
-
-Dr.
- Hans Schulze
-\begin_inset Quotes grd
-\end_inset
-
- angegeben werden, wenn er mit diesem Titel in 
+ bereits als Teilnehmer existiert.
+ Existiert der Antragsteller noch nicht, wird ihn 
 \begin_inset Flex Noun
 status collapsed
 
@@ -4572,7 +4617,13 @@ OpenSlides
 
 \end_inset
 
- angelegt ist.
+ automatisch anlegen.
+ Noch nicht existierende Antragsteller müssen 
+\emph on
+ohne
+\emph default
+ Titel in der CSV-Datei stehen, da der Titel sonst als Vorname angelegt
+ würde.
 \end_layout
 
 \begin_layout Standard
@@ -4642,7 +4693,8 @@ Durchsuchen
 \end_inset
 
  und wählt eine CSV-Datei aus.
- Nach wenigen Sekunden sieht man in der Vorschau was importiert werden wird:
+ Nach wenigen Sekunden sieht man in der Vorschau was importiert werden wird
+ und kann die CSV-Datei noch ändern, falls es Fehler gibt:
 \begin_inset Foot
 status collapsed
 
@@ -4686,6 +4738,10 @@ reference "chap:Beispiel-für-Antrag-1"
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4702,8 +4758,7 @@ reference "chap:Beispiel-für-Antrag-1"
 \end_layout
 
 \begin_layout Standard
-und kann die CSV-Datei noch ändern, falls es Fehler gibt.
- Wie man sieht, werden noch nicht existierende Kategorien und Antragsteller
+Wie man sieht, werden noch nicht existierende Sachgebiete und Antragsteller
  beim Importieren automatisch angelegt.
  Zum Import drückt man auf den blauen Knopf 
 \begin_inset Flex Menu Name
@@ -4776,8 +4831,8 @@ Excel
 <lyxtabular version="3" rows="3" columns="5">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="8col%">
-<column alignment="center" valignment="top" width="20col%">
+<column alignment="center" valignment="top" width="12col%">
+<column alignment="center" valignment="top" width="25col%">
 <column alignment="center" valignment="top" width="18col%">
 <column alignment="center" valignment="top" width="0pt">
 <row>
@@ -4914,10 +4969,8 @@ Kat A-1
 \uwave off
 \noun off
 \color none
-Sat\SpecialChar softhyphen
-zungs\SpecialChar softhyphen
-ände\SpecialChar softhyphen
-rung
+Satzungs\SpecialChar softhyphen
+änderung
 \end_layout
 
 \end_inset
@@ -4938,8 +4991,8 @@ rung
 \uwave off
 \noun off
 \color none
-Die Mitgliederversammlung möge beschließen, in §8 Absatz 1 der Vereinssatzung
- die Zahl fünf durch sieben zu ersetzen.
+Die Mitgliederversammlung möge beschließen,\SpecialChar ldots
+
 \end_layout
 
 \end_inset
@@ -4960,8 +5013,8 @@ Die Mitgliederversammlung möge beschließen, in §8 Absatz 1 der Vereinssatzung
 \uwave off
 \noun off
 \color none
-Die vielen Aufgaben erfordern eine Erweiterung des Beirates auf sieben Mitgliede
-r.
+Die vielen Aufgaben erfordern \SpecialChar ldots
+
 \end_layout
 
 \end_inset
