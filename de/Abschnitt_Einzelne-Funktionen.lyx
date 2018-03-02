@@ -5126,8 +5126,8 @@ Bearbeiten
 \end_inset
 
 , kann man den Antrag bearbeiten.
- Um nur den Antragsblock oder die Kategorie zu ändern, kann man alternativ
- auf die entsprechenden Symbole 
+ Um nur den Antragsblock, die Schlagworte, das Sachgebiet oder die Herkunft
+ zu ändern, kann man alternativ auf die entsprechenden Symbole 
 \begin_inset Graphics
 	filename clipart/Kategorie-Block-Icon.jpg
 
@@ -5190,7 +5190,8 @@ Mit dem Knopf
 
 \end_inset
 
- in der Antragsübersicht können Anträge ausgewählt werden um sie zu löschen.
+ in der Antragsübersicht können Anträge ausgewählt werden um diese zusammen
+ zu ändern.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5207,7 +5208,8 @@ reference "subsec:Einstellungen-Anträge"
 \end_inset
 
 .
- Ist der Antrag geöffnet, kann die Nummerierung für ihn geändert werden.
+ Ist der Antrag geöffnet, indem man in der Antragsliste auf seinen Titel
+ geklickt hat, kann die Nummerierung für ihn geändert werden.
  Dies ändert jedoch nicht die Nummerierung in der Projektion.
  Für diese ist nur die globale Einstellung ausschlaggebend.
 \end_layout
@@ -5246,8 +5248,7 @@ Name des Empfehlungsgebers
 \end_layout
 
 \begin_layout Standard
-Klick man auf den Namen eines Antrags, kann man in der Box über dem Antragstext
- auf 
+Ist der Antrag geöffnet, kann man in der Box über dem Antragstext auf 
 \begin_inset Graphics
 	filename clipart/Empfehlung-einzeln.jpg
 	scale 70
@@ -5294,7 +5295,7 @@ OpenSlides
 \end_layout
 
 \begin_layout Subsubsection
-Nummerierung
+Bezeichner
 \end_layout
 
 \begin_layout Standard
@@ -5307,8 +5308,8 @@ OpenSlides
 
 \end_inset
 
- nummeriert alle Anträge automatisch, je nachdem welche Voreinstellungen
- man vorgenommen hat, siehe 
+ nummeriert den Bezeichner von Anträgen automatisch, je nachdem welche Voreinste
+llungen man vorgenommen hat, siehe 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Einstellungen-Anträge"
@@ -6523,81 +6524,42 @@ Ja
 
 \end_layout
 
-\begin_layout Subsubsection
-Experteneinstellung
+\begin_layout Subsection
+Unterstützung
 \end_layout
 
 \begin_layout Standard
-Es kann eingestellt werden, dass ein Antrag in einem bestimmten Status nur
- für bestimmte Benutzer sichtbar ist.
- Die Anpassung kann vor dem ersten Anlegen der Datenbank in der Datei 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-OpenSlides/motion/signals.py
-\end_layout
+Ist das Unterstützersystem in den Einstellungen aktiviert, siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Einstellungen-Anträge"
 
 \end_inset
 
- in der Funktion
+, können Teilnehmer einen Antrag im Status „
+\emph on
+eingereicht
+\emph default
+“ oder „
+\emph on
+veröffentlicht
+\emph default
+“ unterstützen.
+ Dazu klickt man auf den Antragstitel in der Antragsübersicht und anschließend
+ auf 
+\begin_inset Graphics
+	filename clipart/Antrag-unterstützen.jpg
+	scale 75
+	BoundingBox 0bp 7bp 110bp 0bp
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-create_builtin_workflows()
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-erfolgen: Dazu beim gewünschten Status beispielsweise die Zeile
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-required_permission_to_see='motion.can_manage_motion',
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-einfügen.
- Die Anpassung kann aber auch bei bestehender Datenbank erfolgen: Dazu mit
- einem entsprechenden Tool direkt auf die Datenbank zugreifen und beim gewünscht
-en Status das Feld 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-required_permission_to_see
-\end_layout
-
-\end_inset
-
- beispielsweise mit der Zeichenkette 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-motion.can_manage_motion
-\end_layout
-
-\end_inset
-
- überschreiben.
+Solange der Antragsstatus nicht geändert wurde, können die Teilnehmer dem
+ Antrag ihre Unterstützung auch wieder entziehen.
 \end_layout
 
 \begin_layout Subsection
@@ -7406,7 +7368,7 @@ Voreingestellte Zeilennummerierung
 \end_layout
 
 \begin_layout Description
-aus keine Nummerierung
+Deaktiviert keine Nummerierung
 \end_layout
 
 \begin_layout Description
@@ -7464,26 +7426,30 @@ Mit der Option
 status collapsed
 
 \begin_layout Plain Layout
-Einreichen von neuen Anträgen stoppen für Nutzer ohne Verwaltungsrechte
+Begründung auf dem Projektor ausblenden
 \end_layout
 
 \end_inset
 
- kann Teilnehmern, die nicht in der Gruppe 
-\emph on
-Mitarbeitende
-\emph default
- sind, das Recht auf das Anlagen neuer Anträge genommen werden.
- Siehe 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Gruppen"
+ wird die Antragsbegründung nicht mit projiziert.
+ Dies kaann für mehr Übersicht sorgen, denn die Begründungen sind oft zu
+ lang oder sie sollen mündlich vorgebracht werden und die Teilnehmer sollen
+ nicht durch die projizierte Begründung von der mündlichen abgelenkt werden.
+\end_layout
+
+\begin_layout Standard
+Mit der Option 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Empfehlung auf dem Projektor ausblenden
+\end_layout
 
 \end_inset
 
- für Teilnehmergruppen.
- Dies ist sinnvoll, wenn der Antragsschluss bereits verstrichen ist oder
- die Versammlungsleitung einen Antragsschluss verkündet.
+ wird die Empfehlung für einen Antrag mit projiziert.
+ Gibt es noch keine Empfehlung, wird nichts zusätzlich zum Antrag projiziert.
 \end_layout
 
 \begin_layout Standard
@@ -7512,6 +7478,34 @@ reference "subsec:Versionierung"
 \end_layout
 
 \begin_layout Standard
+Mit der Option 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Einreichen von neuen Anträgen stoppen für Nutzer ohne Verwaltungsrechte
+\end_layout
+
+\end_inset
+
+ kann Teilnehmern, die nicht in der Gruppe 
+\emph on
+Mitarbeitende
+\emph default
+ sind, das Recht auf das Anlagen neuer Anträge genommen werden.
+ Siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Gruppen"
+
+\end_inset
+
+ für Teilnehmergruppen.
+ Dies ist sinnvoll, wenn der Antragsschluss bereits verstrichen ist oder
+ die Versammlungsleitung einen Antragsschluss verkündet.
+\end_layout
+
+\begin_layout Standard
 Im Feld 
 \begin_inset Flex Menu Name
 status collapsed
@@ -7532,6 +7526,40 @@ reference "subsec:Empfehlung"
 \end_inset
 
  beschrieben ist.
+\end_layout
+
+\begin_layout Standard
+Das Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Voreingestellte Fassung für Änderungsempfehlungen
+\end_layout
+
+\end_inset
+
+ erlaubt es, festzulegen, welche Fassung standardmäßig angezeigt?? wird:
+\end_layout
+
+\begin_layout Description
+Originalfassung Die Originalfassung des Antrags??
+\end_layout
+
+\begin_layout Description
+Geänderte
+\begin_inset space ~
+\end_inset
+
+Fassung Die Fassung mit den Änderungen
+\end_layout
+
+\begin_layout Description
+Änderungsdarstellung ??
+\end_layout
+
+\begin_layout Description
+Beschlussfassung Die finale, beschlossene Fassung
 \end_layout
 
 \begin_layout Subsubsection*
@@ -7572,7 +7600,7 @@ Mit der Option
 status collapsed
 
 \begin_layout Plain Layout
-Titel und Text für neuen Änderungsantrag übernehmen
+Text für neuen Änderungsantrag übernehmen
 \end_layout
 
 \end_inset
@@ -7706,7 +7734,15 @@ Stimmzettel auf allen abgegebenen Stimmen beruht.
 \end_layout
 
 \begin_layout Description
-Deaktiviert deaktiviert ist.
+Deaktiviert
+\begin_inset space ~
+\end_inset
+
+(keine
+\begin_inset space ~
+\end_inset
+
+Prozente) deaktiviert ist.
  Es werden dann nur die Anzahlen der Stimmen als Ergebnis einer Wahl projiziert.
 \end_layout
 
@@ -7866,6 +7902,43 @@ Einleitungstext für PDF- und DOCX-Dokumente (alle Anträge)
 
  wird der Text eingegeben, der in der Ausgabe mit der Übersicht aller Anträge
  erscheint.
+\end_layout
+
+\begin_layout Standard
+Im Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Sachgebiete sortieren nach
+\end_layout
+
+\end_inset
+
+ wird festgelegt, ob die Sachgebiete im PDF- oder DOCX-Export sortiert werden
+ nach deren
+\end_layout
+
+\begin_layout Description
+Präfix
+\end_layout
+
+\begin_layout Description
+Name
+\end_layout
+
+\begin_layout Standard
+Mit der Option 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Laufende Nummer im PDF und DOCX anzeigen
+\end_layout
+
+\end_inset
+
+ wird in der Export-Datei jeder Antrag mit einer fortlaufenden Nummer versehen.
 \end_layout
 
 \begin_layout Standard
