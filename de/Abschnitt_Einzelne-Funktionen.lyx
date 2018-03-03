@@ -1025,30 +1025,11 @@ OpenSlides
  hochgeladen werden, siehe 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sec:Dateien"
+reference "subsec:Logos-festlegen"
 
 \end_inset
 
 .
- In der Dateiübersicht im Menü 
-\begin_inset Flex Menu Name
-status collapsed
-
-\begin_layout Plain Layout
-Dateien
-\end_layout
-
-\end_inset
-
- fährt man mit der Maus über die gewünschte Bilddatei und klickt im erscheinende
-n Kontextmenü auf 
-\begin_inset Graphics
-	filename clipart/Logos-verwalten.jpg
-
-\end_inset
-
-.
- Nun kann man festlegen, für welche Logos das Bild verwendet wird.
 \end_layout
 
 \begin_layout Standard
@@ -6770,13 +6751,44 @@ Ist der Antrag erstellt, wird er in der Antragsliste unter dem ursprünglichen
 \end_layout
 
 \begin_layout Standard
+In diesem Beispiel würde in den Einstellungen der Präfix
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Suffix, siehe Bug https://github.com/OpenSlides/OpenSlides/issues/3622
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Quotes gld
+\end_inset
+
+-Ä
+\begin_inset Quotes grd
+\end_inset
+
+ für Änderungsanträge eingestellt.
+ Änderungsanträge erhalten damit den Bezeichner des ursprünglichen Antrags
+ plus den Suffix.
+\end_layout
+
+\begin_layout Standard
 Änderungsanträge werden wie alle anderen Anträge behandelt.
  Das heißt man kann den Arbeitsablauf einstellen, darüber abstimmen usw.
- Sie können auch normal importiert werden.
+ Änderungsanträge können auch normal importiert werden.
 \end_layout
 
 \begin_layout Subsubsection
 Änderungsempfehlung
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Änderungsempfehlung"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6946,7 +6958,7 @@ Sobald man eine Änderung vorgenommen hat, erscheint unten am Bildschirm
 \align center
 \begin_inset Graphics
 	filename clipart/Text-wurde-geändert.jpg
-	lyxscale 75
+	lyxscale 70
 	scale 70
 
 \end_inset
@@ -7054,15 +7066,14 @@ Mit dem Knopf
 \end_layout
 
 \begin_layout Standard
-Sie können eine erforderliche Mehrheit festlegen.
- Mit 
+Mit 
 \begin_inset Graphics
 	filename clipart/PDF-Symbol-klein.jpg
 	scale 70
 
 \end_inset
 
- können Sie eventuell benötigte Abstimmungszettel als PDF erzeugen.
+ kann man eventuell benötigte Abstimmungszettel als PDF erzeugen.
  Mittels 
 \begin_inset Graphics
 	filename clipart/Bearbeiten-Symbol-klein.jpg
@@ -7070,12 +7081,12 @@ Sie können eine erforderliche Mehrheit festlegen.
 
 \end_inset
 
- können Sie das Abstimmungsergebnis eintragen.
- Wenn Sie 
+ kann man das Abstimmungsergebnis eintragen.
+ Wenn man 
 \family sans
 -1
 \family default
- eintragen, wird später das Wort „Mehrheit“ ausgegeben.
+ einträgt, wird später das Wort „Mehrheit“ ausgegeben.
  
 \family sans
 -2
@@ -7085,8 +7096,7 @@ Sie können eine erforderliche Mehrheit festlegen.
 \end_inset
 
 erfasst“.
- Sollten Sie bei den abgegebenen Stimmen einen Wert eintragen, berechnet
- 
+ Trägt man bei den abgegebenen Stimmen einen Wert ein, berechnet 
 \begin_inset Flex Noun
 status collapsed
 
@@ -7097,7 +7107,7 @@ OpenSlides
 \end_inset
 
  automatisch die prozentualen Anteile der übrigen Stimmzahlen.
- Klicken Sie am Ende auf 
+ Klickt man auf 
 \begin_inset Flex Menu Name
 status collapsed
 
@@ -7107,9 +7117,10 @@ Speichern
 
 \end_inset
 
-.
- Das Ergebnis wird sofort projiziert, wenn der Antrag gerade projiziert
+, wird das Ergebnis sofort projiziert, wenn der Antrag gerade projiziert
  wird.
+ Man kann die erforderliche Mehrheit nach der Eingabe des Ergebnisses einstellen.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -7202,16 +7213,27 @@ reference "subsec:Einstellungen-Anträge"
  Es erscheint in der Übersicht zuerst die Liste aller Sachgebiete, dann
  die Liste der Anträge und schlussendlich jeder Antrag komplett mit Begründung.
  Die Anträge können so auch ausgedruckt und verteilt werden.
-\begin_inset Note Note
-status open
+\end_layout
+
+\begin_layout Standard
+Ist eine Datei als 
+\begin_inset Flex Menu Name
+status collapsed
 
 \begin_layout Plain Layout
-Hinweis auf Logo
+PDF-Logo Kopfzeile
 \end_layout
 
 \end_inset
 
+ gesetzt, siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Logos-festlegen"
 
+\end_inset
+
+, erscheint das Logo in der Kopfzeile jedes Antrags.
 \end_layout
 
 \begin_layout Subsection
@@ -7432,7 +7454,7 @@ Begründung auf dem Projektor ausblenden
 \end_inset
 
  wird die Antragsbegründung nicht mit projiziert.
- Dies kaann für mehr Übersicht sorgen, denn die Begründungen sind oft zu
+ Dies kann für mehr Übersicht sorgen, denn die Begründungen sind oft zu
  lang oder sie sollen mündlich vorgebracht werden und die Teilnehmer sollen
  nicht durch die projizierte Begründung von der mündlichen abgelenkt werden.
 \end_layout
@@ -7529,7 +7551,7 @@ reference "subsec:Empfehlung"
 \end_layout
 
 \begin_layout Standard
-Das Feld 
+Im Feld 
 \begin_inset Flex Menu Name
 status collapsed
 
@@ -7539,11 +7561,19 @@ Voreingestellte Fassung für Änderungsempfehlungen
 
 \end_inset
 
- erlaubt es, festzulegen, welche Fassung standardmäßig angezeigt?? wird:
+ kann man festlegen, welche Fassung von Anträgen mit Änderungsempfehlungen
+ standardmäßig angezeigt wird, siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Änderungsempfehlung"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Description
-Originalfassung Die Originalfassung des Antrags??
+Originalfassung Die Originalfassung des Antrags
 \end_layout
 
 \begin_layout Description
@@ -7555,7 +7585,8 @@ Fassung Die Fassung mit den Änderungen
 \end_layout
 
 \begin_layout Description
-Änderungsdarstellung ??
+Änderungsdarstellung Eine Fassung, bei der die Änderungen grafisch hervorgehoben
+ werden
 \end_layout
 
 \begin_layout Description
@@ -8172,16 +8203,24 @@ Um Stimmzettel zu erstellen, klickt man auf
 .
  Der Stimmzettel ist so ausgelegt, dass er ausgedruckt und verteilt werden
  kann.
-\begin_inset Note Note
-status open
+ Ist eine Datei als 
+\begin_inset Flex Menu Name
+status collapsed
 
 \begin_layout Plain Layout
-Hinweis auf Logo
+PDF-Stimmzettel-Logo
 \end_layout
 
 \end_inset
 
+ gesetzt, siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Logos-festlegen"
 
+\end_inset
+
+, erscheint das Logo in der Kopfzeile jedes Stimmzettels.
 \end_layout
 
 \begin_layout Standard
@@ -8800,6 +8839,79 @@ Als Tagesordnungspunkt anzeigen
 Des Weiteren ist es möglich, hochgeladene Bilder auf dieselbe Weise in Antragste
 xten zu verwenden.
  Dateien können auch an Anträge angehängt werden.
+\end_layout
+
+\begin_layout Subsection
+Logos festlegen
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Logos-festlegen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hochgeladene Datei können als Logo verwendet werden.
+ In der Dateiübersicht fährt man dazu mit der Maus über die gewünschte Bilddatei
+ und klickt im erscheinenden Kontextmenü auf 
+\begin_inset Graphics
+	filename clipart/Logos-verwalten.jpg
+
+\end_inset
+
+.
+ Nun kann man festlegen, für welche Logos das Bild verwendet wird.
+ Eine Datei kann für mehrere Logo-Arten verwendet werden.
+ Es gibt folgende Arten:
+\end_layout
+
+\begin_layout Description
+Projektor-Logo erscheint im Projektor oben links in der Ecke.
+\end_layout
+
+\begin_layout Description
+Projektor-Kopfgrafik nimmt den komplette Kopfbereich des Projektors ein.
+ Das Logo sollte eine Bildgröße von 
+\begin_inset Formula $1024\times70\thinspace$
+\end_inset
+
+px haben.
+\end_layout
+
+\begin_layout Description
+Web-Interface-Kopfzeilen-Logo erscheint in der Kopfzeile von 
+\begin_inset Flex Noun
+status collapsed
+
+\begin_layout Plain Layout
+OpenSlides
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+PDF-Logo
+\begin_inset space ~
+\end_inset
+
+Kopfzeile erscheint in der Kopfzeile von exportierten PDFs.
+\end_layout
+
+\begin_layout Description
+PDF-Logo
+\begin_inset space ~
+\end_inset
+
+Fußzeile erscheint in der Fußzeile von exportierten PDFs.
+\end_layout
+
+\begin_layout Description
+PDF-Stimmzettel-Logo erscheint in der Kopfzeile von Wahlzetteln.
 \end_layout
 
 \begin_layout Standard
