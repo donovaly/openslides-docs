@@ -961,11 +961,7 @@ Anträgen:
 
 \family sans
 Bezeichner,Titel,Text,Begründung,Antragsteller/in,Sachgebiet,Herkunft,Antragsblo
-ck,
-\begin_inset Newline newline
-\end_inset
-
-Status,Empfehlung
+ck
 \begin_inset Newline newline
 \end_inset
 
@@ -973,62 +969,10 @@ Kat A-1,Satzungsänderung,"Die Mitgliederversammlung möge beschließen, in
  §8 Absatz 1 der Vereinssatzung die Zahl fünf durch sieben zu ersetzen.","Die
  vielen Aufgaben erfordern eine Erweiterung des Beirates auf sieben Mitglieder.",
 Hans Schulze,Kategorie A,Vorstandssitzung vom 19.10.,
-\family default
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-,
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\family sans
-,Annahme
 \begin_inset Newline newline
 \end_inset
 
 B1,Titel 2,Text 2,Begründung 2,Anke Meier-Schulze,Kategorie B,
-\family default
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-,
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\family sans
-,
 \family default
 
 \begin_inset ERT
@@ -1059,32 +1003,6 @@ status collapsed
 \end_inset
 
 ,Titel 3,Text 3,Begründung 3,
-\family default
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-,
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\family sans
-,
 \family default
 
 \begin_inset ERT

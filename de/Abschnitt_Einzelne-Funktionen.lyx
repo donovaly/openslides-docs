@@ -4500,7 +4500,7 @@ Bezeichner,Titel,Text,Begründung,Antragsteller/in,Sachgebiet,Herkunft,
 \begin_inset Newline newline
 \end_inset
 
-Antragsblock,Status,Empfehlung
+Antragsblock
 \end_layout
 
 \end_inset
@@ -4527,46 +4527,6 @@ Kat A-1,Satzungsänderung,"Die Mitgliederversammlung möge beschließen, in
  §8 Absatz 1 der Vereinssatzung die Zahl fünf durch sieben zu ersetzen.","Die
  vielen Aufgaben erfordern eine Erweiterung des Beirates auf sieben Mitglieder.",
 Hans Schulze,Kategorie A,Vorstandssitzung vom 19.10.,
-\family default
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-,
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\family sans
-,Annahme
-\family default
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Die geschweiften Klammern verhindern, dass \SpecialChar LaTeX
- aus zwei aufeinanderfolgenden
- Kommas ein Anführungszeichen macht.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
