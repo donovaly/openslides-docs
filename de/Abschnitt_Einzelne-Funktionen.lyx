@@ -8250,8 +8250,21 @@ Erforderliche Mehrheit
 
  festlegen, welche Mehrheit für eine gültige Wahl erreicht werden muss.
  Dementsprechend erscheint in der Tabelle, ob dieses Quorum erreicht wurde.
- Um anschließend Kandidaten als gewählt zu markieren, klickt man in die
- Box vor dem Namen des Kandidaten.
+ Hat man bei der Eingabe des Wahlergebnisses einen Fehler gemacht oder wurden
+ Werte vergessen einzugeben, kann man einfach noch einmal auf 
+\begin_inset Graphics
+	filename clipart/Stimmen-eingeben.jpg
+	scale 60
+	BoundingBox 0bp 7bp 141bp 0bp
+
+\end_inset
+
+ klicken und das korrigieren.
+\end_layout
+
+\begin_layout Standard
+Um Kandidaten als gewählt zu markieren, klickt man in die Box vor dem Namen
+ des Kandidaten.
  Kandidaten können unabhängig vom Quorum als gewählt markiert werden.
  Um die Wahl zu veröffentlichen, klickt man auf 
 \begin_inset Graphics
@@ -8285,7 +8298,7 @@ Falls weitere Wahlgänge nötig sind, kann man diese mit
 \end_inset
 
  anlegen.
- Ist die Wahl abgeschlossen ändert man deren Phase auf 
+ Ist die Wahl abgeschlossen, ändert man deren Phase auf 
 \begin_inset Flex Menu Name
 status collapsed
 
@@ -8490,6 +8503,20 @@ Stimmzettel auf allen abgegebenen Stimmen beruht.
 \begin_layout Description
 Deaktiviert deaktiviert ist.
  Es werden dann nur die Anzahlen der Stimmen als Ergebnis einer Wahl projiziert.
+\end_layout
+
+\begin_layout Standard
+Im Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Erforderliche Mehrheit
+\end_layout
+
+\end_inset
+
+ kann ein Quorum für die Mehrheit bei Wahlen voreingestellt werden.
 \end_layout
 
 \begin_layout Standard
@@ -9199,7 +9226,8 @@ OpenSlides
 \end_layout
 
 \begin_layout Standard
-Klickt man darauf, öffnet sich eine Chatbox:
+Klickt man darauf, öffnet sich eine Chatbox in der man die Nachrichten der
+ anderen Nutzer sehen kann:
 \end_layout
 
 \begin_layout Standard
@@ -9213,8 +9241,7 @@ Klickt man darauf, öffnet sich eine Chatbox:
 \end_layout
 
 \begin_layout Standard
-in der man die Nachrichten der anderen Nutzer sehen kann.
- Man kann dort eigene Nachrichten schreiben, die mit Klicken auf 
+Man kann dort eigene Nachrichten schreiben, die mit Klicken auf 
 \begin_inset Graphics
 	filename clipart/Chat-senden.jpg
 	scale 60
@@ -9271,11 +9298,10 @@ Einstellungen
 \end_inset
 
  finden sich verschiedene Einstellmöglichkeiten.
- Bei allen Einstellungen, die auch die Projektoransicht betreffen, zum Beispiel
- dem Titel der Veranstaltung, ist zu beachten, dass die Projektoransicht
- sich im Kopfbereich nicht automatisch aktualisiert.
- Man muss das Browserfenster der Projektoransicht an dem Computer, an dem
- der Projektor angeschlossen ist, manuell mit der Taste 
+ Falls sich die Projektoransicht sich im Kopfbereich nach geänderten Einstellung
+en nicht automatisch aktualisiert, muss man das Browserfenster der Projektoransi
+cht an dem Computer, an dem der Projektor angeschlossen ist, manuell mit
+ der Taste 
 \begin_inset Flex Code
 status collapsed
 
@@ -9363,20 +9389,6 @@ Im Feld
 status collapsed
 
 \begin_layout Plain Layout
-Veranstalter
-\end_layout
-
-\end_inset
-
- wird der Veranstalter angegeben.
-\end_layout
-
-\begin_layout Standard
-Im Feld 
-\begin_inset Flex Menu Name
-status collapsed
-
-\begin_layout Plain Layout
 Impressum
 \end_layout
 
@@ -9384,7 +9396,6 @@ Impressum
 
  wird das Impressum des Veranstalters angegeben.
  Dieses erscheint in der Fußzeile der Startseite.
- Weblinks müssen als HTML-Code eingegeben werden.
 \end_layout
 
 \begin_layout Standard
@@ -9413,11 +9424,6 @@ Text der Startseite
 \end_inset
 
  wird der Text für die Startseite eingegeben.
- Weblinks, Bilder, usw.
-\begin_inset space \space{}
-\end_inset
-
-müssen als HTML-Code eingegeben werden.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -9476,7 +9482,7 @@ Diesen Text auf der Login-Seite anzeigen
 \end_layout
 
 \begin_layout Subsubsection*
-Rubrik CSV
+Rubrik Export
 \end_layout
 
 \begin_layout Standard
@@ -9490,8 +9496,37 @@ Feldtrenner für alle CSV-Exports und -Beispiele
 
 \end_inset
 
- können Sie das Trennzeichen für alle Exporte und Beispiele im CSV-Format
+ kann man das Trennzeichen für alle Exporte und Beispiele im CSV-Format
  festlegen.
+\end_layout
+
+\begin_layout Standard
+Im Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Seitenzahl-Ausrichtung im PDF
+\end_layout
+
+\end_inset
+
+ kann die Ausrichtung der Seitennummer in exportierten PDFs eingestellt
+ werden.
+\end_layout
+
+\begin_layout Standard
+Im Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Standard-Schriftgröße im PDF
+\end_layout
+
+\end_inset
+
+ kann die Standard-Schriftgröße in exportierten PDFs festgelegt werden.
 \end_layout
 
 \begin_layout Subsection
@@ -9567,6 +9602,75 @@ reference "subsec:Einstellungen-Teilnehmer"
 \end_inset
 
  erläutert.
+\end_layout
+
+\begin_layout Subsection
+Benutzerdefinierte Übersetzungen
+\end_layout
+
+\begin_layout Standard
+Klickt man auf 
+\begin_inset Graphics
+	filename clipart/Neue-Übersetzung.jpg
+	scale 80
+	BoundingBox 0bp 7bp 223bp 0bp
+
+\end_inset
+
+, kann man einzelne Worte neu übersetzen.
+ Z.
+\begin_inset space \thinspace{}
+\end_inset
+
+B.
+ werden die Berechtigungen für Teilnehmer mit dem Knopf 
+\begin_inset Graphics
+	filename clipart/Gruppen-Symbol.jpg
+	scale 60
+	BoundingBox 0bp 7bp 92bp 0bp
+
+\end_inset
+
+ festgelegt.
+ 
+\emph on
+Gruppen
+\emph default
+ ist vielleicht nicht der optimale Begriff, den alle Mitarbeitende verstehen.
+ Daher kann man dies eingeben:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename clipart/Beispielübersetzung.jpg
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+und der Knopf im Menü 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Teilnehmende
+\end_layout
+
+\end_inset
+
+ sieht nun so aus: 
+\begin_inset Graphics
+	filename clipart/Berechtigungen.jpg
+	scale 80
+	BoundingBox 0bp 7bp 100bp 0bp
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
