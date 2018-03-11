@@ -6841,6 +6841,24 @@ Mit den Daumen-Symbolen kann die Änderung gemäß Beschlussfassung angenommen
  oder verworfen werden.
 \end_layout
 
+\begin_layout Standard
+Für den Titel eines Antrags kann auch eine Änderungsempfehlung erstellt
+ werden.
+ Dazu geht man mit der Maus vor den ersten Buchstaben des Titels und es
+ erscheint 
+\begin_inset Graphics
+	filename clipart/Neue-Änderungsempfehlung.jpg
+	scale 70
+
+\end_inset
+
+.
+ Klickt man darauf, kann eine Änderung eingegeben werden.
+ Vor dem Titel erscheint nun ein blauer Strich, der angibt, dass es eine
+ Änderung gibt.
+ Durch Klicken auf den Strich gelangt man direkt zur Änderungsdarstellung.
+\end_layout
+
 \begin_layout Subsubsection
 Inline-Bearbeitung
 \end_layout
@@ -9125,6 +9143,7 @@ OpenSlides
 \begin_layout Standard
 Klickt man darauf, wird eine Liste aller Reden, den Rednern und der tatsächlich
  geredeten Zeit in eine CSV-Datei exportiert.
+ Dessen Zeichenkodierung ist Unicode (UTF-8).
  CSV-Dateien können mit allen gängigen Tabellenkalkulationen wie z.
 \begin_inset space \thinspace{}
 \end_inset
