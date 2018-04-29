@@ -8676,7 +8676,7 @@ Hochladen von Dateien
 \end_layout
 
 \begin_layout Standard
-Wechseln Sie zum Menüpunkt 
+Wechseln Sie zum Menü 
 \begin_inset Flex Menu Name
 status collapsed
 
@@ -8698,36 +8698,12 @@ Dateien
 \end_layout
 
 \begin_layout Standard
-Laden Sie eine Datei hoch, indem Sie mit 
-\begin_inset Flex Menu Name
-status collapsed
-
-\begin_layout Plain Layout
-Durchsuchen
-\end_layout
-
-\end_inset
-
- die Datei aus dem Dateisystem ihres Computers auswählen.
- Außerdem können Sie noch einen ergänzenden Titel angeben, sowie die Person,
+Laden Sie eine Datei hoch, indem Sie eine Datei aus dem Dateisystem ihres
+ Computers auswählen.
+ Nach der Auswahl der Datei können Sie einen Titel angeben, sowie die Person,
  die die Datei hochlädt.
  Wird keine Person angegeben, wird automatisch der aktuell eingeloggte Benutzer
  eingetragen.
-\end_layout
-
-\begin_layout Standard
-Die Datei ist nun auf den Server geladen und unter ihrem Namen auf der Übersicht
-sseite des Menüpunkts 
-\begin_inset Flex Menu Name
-status collapsed
-
-\begin_layout Plain Layout
-Dateien
-\end_layout
-
-\end_inset
-
- verlinkt.
 \end_layout
 
 \begin_layout Subsection
