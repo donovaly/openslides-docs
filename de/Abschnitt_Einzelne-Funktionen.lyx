@@ -776,12 +776,14 @@ Klickt man in der Projektorvorschau auf
 
 \end_inset
 
-, kann man den Projektornamen und auch dessen Auflösung ändern.
- Außerdem kann man so über 
-\begin_inset Graphics
-	filename clipart/Projektionsvorgaben.jpg
-	scale 60
-	BoundingBox 0bp 7bp 161bp 0bp
+, kann man den Projektornamen, das Seitenverhältnis und die Skalierung ändern.
+ Außerdem kann man im Feld 
+\begin_inset Flex Menu Name
+status collapsed
+
+\begin_layout Plain Layout
+Projektionsvorgaben
+\end_layout
 
 \end_inset
 
@@ -868,8 +870,8 @@ Mit dem Kopf
  Mit 
 \begin_inset Graphics
 	filename clipart/Projektor-verbreiten.jpg
-	scale 60
-	BoundingBox 0bp 7bp 95bp 0bp
+	scale 75
+	BoundingBox 0bp 7bp 70bp 0bp
 
 \end_inset
 

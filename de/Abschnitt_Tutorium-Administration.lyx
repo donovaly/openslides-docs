@@ -1487,7 +1487,14 @@ E-Mail
 
  ist wichtig, wenn die Teilnehmer ihre Zugangsdaten per E-Mail bekommen
  sollen.
- Mehr zu E-Mails siehe ??.
+ Mehr zu E-Mails siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Einstellungen-Teilnehmer"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
